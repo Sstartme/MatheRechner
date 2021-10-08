@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewController">
+   <children>
+      <TextField fx:id="txtSideC" layoutX="142.0" layoutY="190.0" />
+      <TextField fx:id="txtSideB" layoutX="142.0" layoutY="156.0" />
+      <TextField fx:id="txtSideA" layoutX="142.0" layoutY="121.0" />
+      <Label layoutX="86.0" layoutY="125.0" text="Side A " />
+      <Label layoutX="200.0" layoutY="14.0" text="Trigonometry Calculator">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="160.0" text="Side B " />
+      <Label layoutX="45.0" layoutY="234.0" text="Angle A  /alpha" />
+      <Label layoutX="51.0" layoutY="280.0" text="angle B /Beta" />
+      <Label layoutX="83.0" layoutY="194.0" text="Side C" />
+      <TextField fx:id="txtAngleA" layoutX="142.0" layoutY="230.0" />
+      <TextField fx:id="txtAngleB" layoutX="142.0" layoutY="268.0" />
+      <Button layoutX="89.0" layoutY="320.0" mnemonicParsing="false" onAction="#berechnen" text="Calculate" />
+      <Label layoutX="68.0" layoutY="53.0" prefHeight="49.0" prefWidth="182.0" text="Enter all known variables (sides a, b and c; angles A and B) into the text boxes. To enter a value, click inside one of the text boxes. Click on the &quot;Calculate&quot; button to solve for all unknown variables." />
+      <Button fx:id="btnReset" layoutX="182.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnReset" text="Reset" />
+      <Canvas fx:id="cnvsDraw" height="299.0" layoutX="318.0" layoutY="106.0" width="315.0" />
+   </children>
+</AnchorPane>
